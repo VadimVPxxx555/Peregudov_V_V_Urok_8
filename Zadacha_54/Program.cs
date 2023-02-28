@@ -59,19 +59,20 @@ int EnterNumber(string message)  //message - сообщение
     return number;
 }
 
-// получить от пользователя M и N 
+// 1. получить от пользователя M и N 
 int m = EnterNumber("введите значение m ");
 int n = EnterNumber("введите значение n ");
 
-// создать двумерный массив и заполнить 
+// 2. создать двумерный массив и заполнить 
 int[,] matrix = CreateRandomArray(m, n, 1, 9); // Создать случайный массив
 
+// 3. показать массив
 ShowArray(matrix);
 
 System.Console.WriteLine();
 
-// упорядочить по убыванию массив
+// 4. упорядочить по убыванию массив
 int[,] arr = OrderingArray(matrix);
 
-// вывести массив в консоль
+// 5. вывести упорядоченный массив в консоль
 ShowArray(arr);
